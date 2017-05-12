@@ -1,0 +1,2 @@
+A = load '/home/acadgild/Downloads/olympic.json' using JsonLoader ('athelete:chararray,age:int,country:chararray,year:chararray,closing:chararray,sport:chararray,gold:int,silver:int,bronze:int,total:int');
+STORE A INTO '/home/acadgild/Desktop/olympic' using org.apache.pig.piggybank.storage.CSVExcelStorage();
